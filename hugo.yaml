@@ -1,7 +1,22 @@
-baseURL: ''
-title: TailBliss
-languageCode: en-us
-DefaultContentLanguage: en
+baseURL: '/'
+DefaultContentLanguage: pt
+IsMultiLingual: true
+languages:
+  pt:
+    weight: 1
+    languageName: Português
+    languageCode: pt-pt
+    contentDir: content/pt
+    title: Funerária Vale de Campo
+    params:
+      moto: "Melhor Funerária de Portugal"
+      description: "Atividades de enterro e de incineração de cadáveres humanos e atividades conexas (preparação dos mortos para enterro ou cremação; serviços de enterro ou cremação, organização de funerais; aluguer de instalações equipadas para serviços funerários, aluguer, venda, manutenção e conservação de sepulturas e de mausoléus), comércio de artigos funerários."
+      p4:
+        heading: "Últimos Falecimentos"
+        content:
+          - text: "Uma memória que jamais se apagará com o tempo."
+      copyrightText: 'Todos os direitos reservados.'
+
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
@@ -49,10 +64,13 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
   disable_theme_toggle: false
-  disable_stay_uptodate: false
+  disable_stay_uptodate: true
+  sponsors_section_enabled: false
+  jit_section_enabled: false
+  mission_section_enabled: false
+  default_top_section_enabled: false
+
 
   p1:
     heading: "Our mission"
@@ -82,10 +100,6 @@ params:
       - identifier: d
       - identifier: e
       - identifier: f
-  p4:
-    heading: "From the blog"
-    content:
-      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
   p5:
     heading: "Stay Up to Date"
     content:
@@ -97,86 +111,88 @@ params:
 
   social_media:
     github:
-      enabled: true
+      enabled: false
       url: 'https://github.com/nusserstudios'
     facebook:
       enabled: true
-      url: 'https://facebook.com/nusserstudios'
+      url: 'https://facebook.com/funerariavaledecampo'
     instagram:
       enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: 'https://instagram.com/funeraria_vale_campo/'
     twitter:
-      enabled: true
-      url: '@nusserstudios'
-    
-
+      enabled: false
+      url: ''
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
+    # - identifier: prose
+    #   name: Prose
+    #   url: /prose/
+    #   weight: 10
+    - identifier: deaths
+      name: Deaths
+      url: /posts/
+      weight: 20
     - identifier: about
       name: About
       url: /about/
-      weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
+      weight: 21
+    # - identifier: categories
+    #   pre: dropdown
+    #   name: Categories
+    #   weight: 30
+    # - identifier: dropdown
+    #   pre: complexdropdown
+    #   name: Dropdown
+    #   weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
       weight: 50
-  categories:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 20
-  dropdown:
-    - identifier: appearance
-      pre: stars # can be stars, comments or piechart
-      name: Appearance
-      post: "Easy customization"
-      url: "#"
-      weight: 10
-    - identifier: comments
-      pre: comments # can be stars, comments or piechart
-      name: Comments
-      post: "Check your latest comments"
-      url: "#"
-      weight: 20
-    - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
-      name: Analytics
-      post: "Take a look at your statistics"
-      url: "#"
-      weight: 30
+  # categories:
+  #   - identifier: prose
+  #     name: Prose
+  #     url: /prose/
+  #     weight: 10
+  #   - identifier: about
+  #     name: About
+  #     url: /about/
+  #     weight: 20
+  # dropdown:
+  #   - identifier: appearance
+  #     pre: stars # can be stars, comments or piechart
+  #     name: Appearance
+  #     post: "Easy customization"
+  #     url: "#"
+  #     weight: 10
+  #   - identifier: comments
+  #     pre: comments # can be stars, comments or piechart
+  #     name: Comments
+  #     post: "Check your latest comments"
+  #     url: "#"
+  #     weight: 20
+  #   - identifier: analytics
+  #     pre: piechart # can be stars, comments or piechart
+  #     name: Analytics
+  #     post: "Take a look at your statistics"
+  #     url: "#"
+  #     weight: 30
   footer:
     - identifier: about
       name: About
       url: /about/
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
+    # - identifier: blog
+    #   name: Blog
+    #   url: /categories/blog/
+    #   weight: 20
+    # - identifier: news
+    #   name: News
+    #   url: /categories/news/
+    #   weight: 30
+    # - identifier: prose
+    #   name: Prose
+    #   url: /prose/
+    #   weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
@@ -193,25 +209,25 @@ taxonomies:
 
 privacy:
   disqus:
-    disable: false
+    disable: true
   googleAnalytics:
     anonymizeIP: true
-    disable: false
+    disable: true
     respectDoNotTrack: false
     useSessionStorage: false
   instagram:
-    disable: false
+    disable: true
     simple: false
   twitter:
-    disable: false
+    disable: true
     enableDNT: false
     simple: false
   vimeo:
-    disable: false
+    disable: true
     enableDNT: false
     simple: false
   youtube:
-    disable: false
+    disable: true
     privacyEnhanced: true
 
 module:
