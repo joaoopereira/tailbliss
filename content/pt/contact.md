@@ -3,21 +3,30 @@ title: Contacte-nos
 draft: false
 language: pt
 ---
-
 <!-- @format -->
-<!--
-
-Adicionar Contactos
-
--->
 <section class="lg:pb-24">
   <div class="max-w-screen-md px-4 mx-auto">
-      <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Para lhe poder apresentar uma proposta adequada, precisamos que partilhe connosco alguns dados. Diga-nos por favor:</p>
+    <h2 class="text-center pb-2 text-3xl font-semi-bold text-gray-800 dark:text-gray-300 md:text-4xl">
+        Serviço 24h
+    </h2>
+    <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+        <a href="tel:+351 224 113 034">+351 224 113 034</a>
+        <i class="text-sm">(Chamada para rede fixa nacional)</i>
+    </p>
+    <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+        <a href="tel:+351 937 066 815">+351 937 066 815</a> | <a href="tel:+351 916 969 820">+351 916 969 820</a>
+         <i class="text-sm">(Chamada para rede móvel nacional)</i>
+    </p>
+    <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+        <a href="mailto:fvalecampo@outlook.pt">fvalecampo@outlook.pt</a>
+    </p>
+    <div class=""></div>
+      <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Deixe aqui a sua mensagem:</p>
       <form name="contact" action="https://formsubmit.co/mail@web@fvalecampo.com" method="POST" class="space-y-8">
       <input type="hidden" name="_autoresponse" value="your custom message">
           <div class="my-4">
               <label for="email" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"><strong>Email:</strong></label>
-              <input type="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light" placeholder="name@mail.com" required>
+              <input type="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light" placeholder="" required>
           </div>
           <div class="my-4">
               <label for="subject" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"><strong>Assunto:</strong></label>
