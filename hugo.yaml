@@ -70,6 +70,7 @@ params:
   jit_section_enabled: false
   mission_section_enabled: false
   default_top_section_enabled: false
+  blog_section_enabled: false
 
 
   p1:
@@ -128,10 +129,10 @@ menu:
     #   name: Prose
     #   url: /prose/
     #   weight: 10
-    - identifier: deaths
-      name: Deaths
-      url: /posts/
-      weight: 20
+    # - identifier: deaths
+    #   name: Deaths
+    #   url: /posts/
+    #   weight: 20
     - identifier: about
       name: About
       url: /about/
@@ -197,11 +198,6 @@ menu:
       name: Contact
       url: /contact/
       weight: 50
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
 
 taxonomies:
   category: Categories
